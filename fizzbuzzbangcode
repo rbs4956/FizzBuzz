@@ -1,0 +1,27 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var oneHundredFiveNumber = [Int]()
+
+for num in 1...105 {
+    oneHundredFiveNumber.append(num)
+    
+}
+
+for num in oneHundredFiveNumber {
+    
+    if num % 3 == 0 && num % 5 == 0 && num % 7 == 0 {
+        print("Fizz-Buzz-Bang")
+    } else if num % 3 == 0 && num % 5 == 0 {
+        print("Fizz-Buzz")
+    } else if num % 3 == 0 {
+        print("Fizz")
+    } else if num % 5 == 0 {
+        print("Buzz")
+    } else if num % 7 == 0 {
+        print ("Bang")
+    } else {
+        print(num)
+    }
+}
